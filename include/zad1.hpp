@@ -6,13 +6,8 @@
 class Makaron
 {
   public:
-  static Makaron* gotujMakaron(const std::string& N)
-  {
-   
-  };
-
-
-  
+  static Makaron* gotujMakaron(const std::string& N);
+    
   virtual ~Makaron();
 virtual double ileMaki(unsigned P) const = 0;
 };
