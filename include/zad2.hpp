@@ -25,7 +25,7 @@ const Makaron* Makaron::gotujMakaron(const std::string& N)
   {return new Penne;}
 }
 */
-Makaron* Makaron::gotujMakaron(const std::string& N)
+ Makaron* gotujMakaron(const std::string& N)
 {
   if(N.front() == N.back())
   {return new Tagliatelle(3.14, 0.42, 0.1);}
