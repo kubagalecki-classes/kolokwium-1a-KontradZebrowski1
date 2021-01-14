@@ -8,3 +8,4 @@
 
 // tutaj funkcja sortujTagliatelle
 template <typename T>
+void sortujTagliatelle()
