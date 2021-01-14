@@ -33,7 +33,7 @@ public:
   Tagliatelle(): L(0.5), W(0.5), R(0.5) {};
   virtual ~Tagliatelle();
   
-  virtual double ileMaki(unsigned P) const
+  virtual double ileMaki(unsigned P) const override
   {
     return P * L * W * (1. - R) * C;
   }

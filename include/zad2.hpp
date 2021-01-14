@@ -9,7 +9,7 @@ class Penne : public Makaron
 {
   public:
   virtual ~Penne() = default;
-  virtual double ileMaki(unsigned P) const
+  virtual double ileMaki(unsigned P) const override
   {
     return (double) P;
   }
@@ -25,10 +25,10 @@ const Makaron* Makaron::gotujMakaron(const std::string& N)
   {return new Penne;}
 }
 */
- Makaron* gotujMakaron(const std::string& N)
+ Makaron* Makaron::gotujMakaron(const std::string& N)
 {
   if(N.front() == N.back())
-  {return new Tagliatelle(3.14, 0.42, 0.1);}
+  {return new Tagliatelle{3.14, 0.42, 0.1};}
   else
-  {return new Penne();}
+  {return new Penne{};}
 }
