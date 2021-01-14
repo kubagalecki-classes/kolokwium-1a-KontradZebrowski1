@@ -16,7 +16,7 @@ class Penne : public Makaron
 };
 
 // tutaj definicja metody gotujMakaron
-static Makaron* gotujMakaron(std::string& N)
+const Makaron* gotujMakaron(std::string& N)
 {
   if(N.front() == N.back())
   {return new Tagliatelle(3.14, 0.42, 0.1);}
