@@ -8,7 +8,7 @@
 class Penne : public Makaron
 {
   public:
-  virtual ~Penne() = default;
+  //virtual ~Penne() = default;
   virtual double ileMaki(unsigned P) const override
   {
     return (double) P;

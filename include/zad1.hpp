@@ -26,7 +26,7 @@ public:
 
   Tagliatelle(double l, double w, double r): L(l), W(w), R(r) {};
   Tagliatelle(): L(0.5), W(0.5), R(0.5) {};
-  virtual ~Tagliatelle();
+  //virtual ~Tagliatelle();
   
   virtual double ileMaki(unsigned P) const override
   {
